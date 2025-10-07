@@ -1,4 +1,4 @@
-//go:build darwin && x86_64
+//go:build darwin && amd64
 
 package go_server_core_binaries_macos
 
@@ -6,10 +6,10 @@ import (
 	_ "embed"
 )
 
-//go:embed libstatsig_ffi.dylib
+//go:embed macos_x86_64.dylib
 var binaryData []byte
 
-//go:embed libstatsig_ffi.dylib.sig
+//go:embed macos_x86_64.dylib.sig
 var signatureData []byte
 
 func GetBinaryData() []byte {
