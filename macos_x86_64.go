@@ -1,4 +1,4 @@
-//go:build darwin && amd64
+//go:build amd64
 
 package go_server_core_binaries_macos
 
